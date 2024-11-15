@@ -21,7 +21,7 @@ public class Arbol extends Planta implements Podable{
     }
 
     private void validarAltura(int alturaMaxima){
-        if(alturaMaxima > MIN_ALTURA){
+        if(alturaMaxima <= MIN_ALTURA){
             throw new IllegalArgumentException("Altura invalida " + getNombre());
         }
     }
